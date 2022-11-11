@@ -44,7 +44,7 @@ pi_soil=st.number_input("กรุณาเลือกข้อมูล คว
 pi_wid=st.number_input("กรุณาเลือกข้อมูล ความกว้างของใบ")
 
 if st.button("ทำนายผล"):
-    loaded_model = pickle.load(open('./data/piapple_model.sav', 'rb'))
+    loaded_model = pickle.load(open('./data/piapple_model(1).sav', 'rb'))
     input_data =  (pi_soil,pi_wid)
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
