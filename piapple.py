@@ -9,7 +9,7 @@ import pickle
 st.image('./pic/welcome.jpg')
 
 html_8="""
-<div style="background-color:#228B22;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:pink;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>การทำนายโรคสับปะรด</h5></center>
 </div>
 """
@@ -32,7 +32,7 @@ else:
 st.sidebar.markdown("# วิเคราห์รายบุคคล")
 
 html_8="""
-<div style="background-color:#228B22;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:pink;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>ทำนายข้อมูล</h5></center>
 </div>
 """
