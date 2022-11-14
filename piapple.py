@@ -9,8 +9,8 @@ import pickle
 st.image('./pic/welcome.jpg')
 
 html_8="""
-<body style="background-color:skyblue"></body>
-<div style="background-color:pink;padding:15px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
+<body background-color:blue></body>
+<div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
 """
@@ -27,12 +27,11 @@ dx2=pd.DataFrame(dx,index=["d1","d2"])
 
 if st.button("แสดงการจินตทัศน์ข้อมูล"):
    st.area_chart(dx2)
-   st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
 
 html_8="""
-<div style="background-color:pink;padding:30px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
+<div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
 <center><h3>ทำนายข้อมูล</h3></center>
 </div>
 """
@@ -56,8 +55,6 @@ if st.button("ทำนายผล"):
         st.image('./pic/withered.jpg')
     else:
         st.image('./pic/normal.jpg')
-
-    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
 
