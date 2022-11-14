@@ -10,7 +10,7 @@ st.image('./pic/welcome.jpg')
 
 html_8="""
 <div style="background-color:#228B22;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>การทำนายข้อมูลดอกไม้</h5></center>
+<center><h5>การทำนายโรคสับปะรด</h5></center>
 </div>
 """
 
@@ -44,7 +44,7 @@ pi_soil=st.number_input("กรุณาเลือกข้อมูล คว
 pi_wid=st.number_input("กรุณาเลือกข้อมูล ความกว้างของใบ")
 
 if st.button("ทำนายผล"):
-    loaded_model = pickle.load(open('./data/piapple_model(1).sav', 'rb'))
+    loaded_model = pickle.load(open('./data/piapple_model.sav', 'rb'))
     input_data =  (pi_soil,pi_wid)
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
