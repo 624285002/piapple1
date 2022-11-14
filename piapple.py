@@ -9,8 +9,9 @@ import pickle
 st.image('./pic/welcome.jpg')
 
 html_8="""
-<div style="background-color:pink;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>การทำนายโรคสับปะรด</h5></center>
+<body style="background-color:skyblue"></body>
+<div style="background-color:pink;padding:15px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
+<center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
 """
 
@@ -29,11 +30,10 @@ if st.button("แสดงการจินตทัศน์ข้อมูล
    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
-st.sidebar.markdown("# วิเคราห์รายบุคคล")
 
 html_8="""
-<div style="background-color:pink;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>ทำนายข้อมูล</h5></center>
+<div style="background-color:pink;padding:30px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
+<center><h3>ทำนายข้อมูล</h3></center>
 </div>
 """
 
