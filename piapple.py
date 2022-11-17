@@ -6,10 +6,11 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 
+
 st.image('./pic/welcome.jpg')
 
 html_8="""
-<body background-color:blue></body>
+<body style="background-color:blue></body>
 <div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
@@ -39,8 +40,8 @@ html_8="""
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-pi_soil=st.number_input("กรุณาเลือกข้อมูล ความสูงจากยอดใบล่างถึงพื้น")
-pi_wid=st.number_input("กรุณาเลือกข้อมูล ความกว้างของใบ")
+pi_soil=st.number_input("กรุณากรอกข้อมูล ความสูงจากยอดใบล่างถึงพื้น")
+pi_wid=st.number_input("กรุณากรอกข้อมูล ความกว้างของใบ")
 
 if st.button("ทำนายผล"):
     loaded_model = pickle.load(open('./data/piapple_model.sav', 'rb'))
@@ -50,11 +51,11 @@ if st.button("ทำนายผล"):
     prediction = loaded_model.predict(input_data_reshaped)
     st.write(prediction)
     if prediction == 'top rot':
-        st.image('./pic/top rot.jpg')
+        st.image('./pic/top rot.jpg' width=50%)
     elif prediction == 'withered':
-        st.image('./pic/withered.jpg')
+        st.image('./pic/withered.jpg' width=50%)
     else:
-        st.image('./pic/normal.jpg')
+        st.image('./pic/normal.jpg' width=50%)
 else:
     st.write("ไม่แสดงข้อมูล")
 
