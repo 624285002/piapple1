@@ -14,7 +14,7 @@ html_8="""
 <div 
             style="background-color:green;
             color:white;
-            padding:8px;
+            padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:black">
@@ -40,7 +40,7 @@ else:
 html_8="""
 <div style="background-color:green;
             color:white;
-            padding:8px;
+            padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:black">
