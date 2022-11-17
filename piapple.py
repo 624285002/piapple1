@@ -10,12 +10,12 @@ import pickle
 st.image('./pic/piapple.jpg')
 
 html_8="""
-<body style=background-color:pink></body>
+<body background-color:pink></body>
 <div 
             style="background-color:green;
             color:white;
-            padding:10px;
-            border-radius:30px 15px 30px 15px;
+            padding:8px;
+            border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:black">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
@@ -40,8 +40,8 @@ else:
 html_8="""
 <div style="background-color:green;
             color:white;
-            padding:10px;
-            border-radius:30px 15px 30px 15px;
+            padding:8px;
+            border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:black">
 <center><h3>ทำนายโรคกันเลย</h3></center>
