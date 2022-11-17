@@ -30,10 +30,6 @@ dt2 = dt['leaf.width'].sum()
 dx=[dt1,dt2]
 dx2=pd.DataFrame(dx,index=["d1","d2"])
 
-if st.button("แสดงการจินตทัศน์ข้อมูล"):
-   st.area_chart(dx2)
-else:
-    st.write("ไม่แสดงข้อมูล")
 
 html_8="""
 <div style="background-color:orange;
@@ -41,7 +37,7 @@ html_8="""
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:white">
-<center><h3>เริ่มทำนายโรค</h3></center>
+<center><h3>กรอกข้อมูลเพื่อทำนายโรค</h3></center>
 </div>
 """
 
@@ -65,6 +61,6 @@ if st.button("ทำนายผล"):
     else:
         st.image('./pic/normal.jpg')
 else:
-    st.write("ไม่แสดงข้อมูล")
+    st.write("")
 
 
