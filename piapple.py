@@ -10,7 +10,9 @@ import pickle
 st.image('./pic/piapple.jpg')
 
 html_8="""
-<body bgcolor ="#FFCCFF"></body>
+<style>
+    <body background-color:pink></body>
+</style>
 <div 
             style="background-color:green;
             font-color:white;
