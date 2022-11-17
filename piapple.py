@@ -10,7 +10,7 @@ import pickle
 st.image('./pic/welcome.jpg')
 
 html_8="""
-<body style="background-color:blue></body>
+<body style="background-color:blue"></body>
 <div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
@@ -51,11 +51,11 @@ if st.button("ทำนายผล"):
     prediction = loaded_model.predict(input_data_reshaped)
     st.write(prediction)
     if prediction == 'top rot':
-        st.image('./pic/top rot.jpg' 'width=50%')
+        st.image('./pic/top rot.jpg')
     elif prediction == 'withered':
-        st.image('./pic/withered.jpg' 'width=50%')
+        st.image('./pic/withered.jpg')
     else:
-        st.image('./pic/normal.jpg' 'width=50%')
+        st.image('./pic/normal.jpg')
 else:
     st.write("ไม่แสดงข้อมูล")
 
