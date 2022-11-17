@@ -11,7 +11,7 @@ import colorama
 st.image('./pic/piapple.jpg')
 
 html_8="""
-<body background-color:pink></body>
+<body bgcolor ="#FFCCFF"></body>
 <div 
             style="background-color:green;
             font-color:white;
