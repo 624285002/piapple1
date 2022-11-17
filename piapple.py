@@ -51,11 +51,11 @@ if st.button("ทำนายผล"):
     prediction = loaded_model.predict(input_data_reshaped)
     st.write(prediction)
     if prediction == 'top rot':
-        st.image('./pic/top rot.jpg' width=50%)
+        st.image('./pic/top rot.jpg' 'width=50%')
     elif prediction == 'withered':
-        st.image('./pic/withered.jpg' width=50%)
+        st.image('./pic/withered.jpg' 'width=50%')
     else:
-        st.image('./pic/normal.jpg' width=50%)
+        st.image('./pic/normal.jpg' 'width=50%')
 else:
     st.write("ไม่แสดงข้อมูล")
 
