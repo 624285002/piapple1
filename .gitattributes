@@ -1,8 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-<style>
-    body{
+body{
         background-color:pink
         color:black
     }
-</style>
