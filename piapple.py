@@ -10,13 +10,10 @@ import pickle
 st.image('./pic/piapple.jpg')
 
 html_8="""
-
+<body style=background-color:pink></body>
 <div 
-body {
-  background-color: pink;
-}
             style="background-color:green;
-            font-color:white;
+            color:white;
             padding:10px;
             border-radius:30px 15px 30px 15px;
             border-style:'solid';
@@ -42,6 +39,7 @@ else:
 
 html_8="""
 <div style="background-color:green;
+            color:white;
             padding:10px;
             border-radius:30px 15px 30px 15px;
             border-style:'solid';
