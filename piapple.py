@@ -11,7 +11,7 @@ st.image('./pic/piapple.jpg')
 
 html_8="""
 <div 
-            style="background-color:green;
+            style="background-color:orange;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
@@ -36,7 +36,7 @@ else:
     st.write("ไม่แสดงข้อมูล")
 
 html_8="""
-<div style="background-color:green;
+<div style="background-color:orange;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
@@ -59,7 +59,7 @@ if st.button("ทำนายผล"):
     prediction = loaded_model.predict(input_data_reshaped)
     st.write(prediction)
     if prediction == 'top rot':
-        st.image('./pic/top rot.jpg')
+        st.image('./pic/top rot.jpg' width)
     elif prediction == 'withered':
         st.image('./pic/withered.jpg')
     else:
