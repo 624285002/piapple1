@@ -7,12 +7,18 @@ import plotly.graph_objects as go
 import pickle
 
 
-st.image('./pic/welcome.jpg')
 st.image('./pic/piapple.jpg')
 
 html_8="""
-<body style="background-color:blue"></body>
-<div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
+body {
+  background-color: pink;
+}
+<div style="background-color:green;
+            font-color:white;
+            padding:10px;
+            border-radius:30px 30px 30px 30px;
+            border-style:'solid';
+            border-color:black">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
 """
@@ -21,7 +27,7 @@ st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
 dt=pd.read_csv("./data/piapple.csv")
-st.write(dt.head(10))
+st.write(dt.head(9))
 dt1 = dt['tip.soil'].sum()
 dt2 = dt['leaf.width'].sum()
 dx=[dt1,dt2]
