@@ -11,11 +11,12 @@ st.image('./pic/piapple.jpg')
 
 html_8="""
 <style>
-    <body background-color:pink></body>
+    body{
+        background-color:pink;
+        color:black;}
 </style>
 <div 
             style="background-color:green;
-            font-color:white;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
@@ -41,7 +42,6 @@ else:
 
 html_8="""
 <div style="background-color:green;
-            text-color:white;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
