@@ -17,7 +17,7 @@ html_8="""
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
-            border-color:black">
+            border-color:white">
 <center><h3>การทำนายโรคสับปะรด</h3></center>
 </div>
 """
@@ -43,8 +43,8 @@ html_8="""
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
-            border-color:black">
-<center><h3>ทำนายโรคกันเลย</h3></center>
+            border-color:white">
+<center><h3>เริ่มทำนายโรค</h3></center>
 </div>
 """
 
