@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 import pickle
+import colorama
 
 
 st.image('./pic/piapple.jpg')
@@ -13,7 +14,7 @@ html_8="""
 <body background-color:pink></body>
 <div 
             style="background-color:green;
-            color:white;
+            font-color:white;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
@@ -39,7 +40,7 @@ else:
 
 html_8="""
 <div style="background-color:green;
-            color:white;
+            text-color:white;
             padding:5px;
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
