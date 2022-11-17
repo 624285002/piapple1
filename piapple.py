@@ -8,6 +8,7 @@ import pickle
 
 
 st.image('./pic/welcome.jpg')
+st.image('./pic/piapple.jpg')
 
 html_8="""
 <body style="background-color:blue"></body>
@@ -33,7 +34,7 @@ else:
 
 html_8="""
 <div style="background-color:pink;padding:10px;border-radius:30px 30px 30px 30px;border-style:'solid';border-color:black">
-<center><h3>ทำนายข้อมูล</h3></center>
+<center><h3>ทำนายโรคกันเลย</h3></center>
 </div>
 """
 
