@@ -45,11 +45,11 @@ st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
 pi_soil=st.number_input("กรุณากรอกข้อมูล ความสูงจากยอดใบล่างถึงพื้น")
-pi_wid=st.number_input("กรุณากรอกข้อมูล ความกว้างของใบ")
+pi_width=st.number_input("กรุณากรอกข้อมูล ความกว้างของใบ")
 
 if st.button("ทำนายผล"):
     loaded_model = pickle.load(open('./data/piapple_model.sav', 'rb'))
-    input_data =  (pi_soil,pi_wid)
+    input_data =  (pi_soil,pi_width)
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
     prediction = loaded_model.predict(input_data_reshaped)
