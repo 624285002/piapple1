@@ -16,7 +16,7 @@ html_8="""
             border-radius:0px 0px 0px 0px;
             border-style:'solid';
             border-color:white">
-<center><h3>การทำนายโรคสับปะรด ด้วยเทนนิค KNN</h3></center>
+<center><h3>การทำนายโรคสับปะรด ด้วยเทคนิค KNN</h3></center>
 </div>
 """
 
